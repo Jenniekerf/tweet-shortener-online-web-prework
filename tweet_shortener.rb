@@ -34,7 +34,7 @@ end.join(" ")
 end  
 
  def bulk_tweet_shortener(tweets)
-   puts word_substituter(tweets)
+   tweets.each {|word| puts word_substituter(tweets)}
  end
  
  def selective_tweet_shortener(tweet)
